@@ -9,6 +9,11 @@ public class countertopGene : MonoBehaviour {
 
     private float widthOfPlatform;
 
+    public objectPool ObjectPool;
+
+    public float platformDistanceMinimum;
+    public float PlatformDistanceMax;
+
 
 	// Use this for initialization
 	void Start () {
@@ -21,9 +26,16 @@ public class countertopGene : MonoBehaviour {
 
         if(transform.position.x < platformGenePoint.position.x)
         {
+            distance = Random.Range(platformDistanceMinimum, PlatformDistanceMax);
             transform.position = new Vector3(transform.position.x + distance, transform.position.y, transform.position.z);
 
-            Instantiate (platformGenePoint, transform.position, transform.rotation);
+            GameObject newCountertop = ObjectPool.GetPoolObj();
+
+            newCountertop.transform.position = transform.position;
+            newCountertop.transform.rotation = transform.rotation;
+            newCountertop.SetActive(true);
+            //Instantiate (Platform, transform.position, transform.rotation);
+
         }
 	
 	}

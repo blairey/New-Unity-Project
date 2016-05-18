@@ -47,7 +47,10 @@
   <ItemGroup>
      <Compile Include="Assets\scritps\AlanController.cs" />
      <Compile Include="Assets\scritps\CameraControl.cs" />
+     <Compile Include="Assets\scritps\PlatfromDestroyer.cs" />
      <Compile Include="Assets\scritps\countertopGene.cs" />
+     <Compile Include="Assets\scritps\objectPool.cs" />
+     <Compile Include="Assets\scritps\singleton.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
