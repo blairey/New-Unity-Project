@@ -32,9 +32,10 @@ public class objectPool : MonoBehaviour
     {
         for(int i = 0; i < poolObjects.Count;i++)
         {
-            if(!poolObjects[i].activeInHierarchy)
+            GameObject poolObj = poolObjects[i]; 
+            if(!poolObj.activeInHierarchy)
             {
-                return poolObjects[i];
+                return poolObj;
             }
         }
 

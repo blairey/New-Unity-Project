@@ -36,7 +36,7 @@ public class countertopGene : MonoBehaviour {
             widthOfPlatform[i] = ObjectPool[i].poolObject.GetComponent<BoxCollider2D>().size.x;
         }
         minimumPlatformHeight = transform.position.y;
-        minimumPlatformHeight = maximumPlatformHeightRange.position.y;
+        maximumPlatformHeight = maximumPlatformHeightRange.position.y;
 	}
 	
 	// Update is called once per frame
