@@ -14,6 +14,8 @@ public class AlanController : MonoBehaviour {
 
     private Animator alanAnimator;
 
+    public GameController gameController;
+
 	// Use this for initialization
 	void Start () {
 
@@ -41,4 +43,12 @@ public class AlanController : MonoBehaviour {
         alanAnimator.SetFloat("speed", AlansBody.velocity.x);
         alanAnimator.SetBool("groundedToPlatform", GroundedToPlatform);
 	}
+
+    void oncollision2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "death")
+        {
+            gameController.resetGame();
+        }
+    }
 }
