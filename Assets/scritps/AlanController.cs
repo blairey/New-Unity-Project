@@ -5,6 +5,7 @@ public class AlanController : MonoBehaviour {
 
     public float moveSpeed;
     public float jumpForce;
+    
 
     public bool GroundedToPlatform;
     public LayerMask ground ;
@@ -44,7 +45,7 @@ public class AlanController : MonoBehaviour {
         alanAnimator.SetBool("groundedToPlatform", GroundedToPlatform);
 	}
 
-    void oncollision2D(Collision2D other)
+    void onCollisionEnter2D (Collision2D other)
     {
         if(other.gameObject.tag == "death")
         {

@@ -27,25 +27,23 @@ public class GameController : MonoBehaviour {
 
     }
 
-        public void reset()
-        {
-            StartCoroutine("resetGame");
-        }
+     public void reset()
+     {
+        StartCoroutine("reset");
+     }
 
     public IEnumerator resetGame()
     {
 
-       
-
         alan.gameObject.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
         platformListing = FindObjectsOfType<PlatfromDestroyer>();
+
         for(int i = 0; i < platformListing.Length ; i++)
         {
             platformListing[i].gameObject.SetActive(false);
         }
 
-
+        yield return new WaitForSeconds(0.5f);
         alan.transform.position = alanBeginPoint;
         platformGene.position = gameBeginPoint;
         alan.gameObject.SetActive(true);
