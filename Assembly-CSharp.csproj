@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\scritps\AlanController.cs" />
      <Compile Include="Assets\scritps\CameraControl.cs" />
+     <Compile Include="Assets\scritps\GameController.cs" />
      <Compile Include="Assets\scritps\PlatfromDestroyer.cs" />
      <Compile Include="Assets\scritps\countertopGene.cs" />
      <Compile Include="Assets\scritps\objectPool.cs" />

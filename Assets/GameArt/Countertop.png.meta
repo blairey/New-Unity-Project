@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: 691b5aadea500794f8ab9d1e570b6902
-timeCreated: 1463493824
+timeCreated: 1463653898
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Countertop_0
+    21300002: Countertop_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,14 +59,29 @@ TextureImporter:
         y: 19
         width: 599
         height: 420
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 2}
       outline:
-      - - {x: -239.2, y: 336.7}
-        - {x: -239.2, y: -0.3000002}
-        - {x: 240.8, y: -0.3000002}
-        - {x: 240.8, y: 336.7}
+      - - {x: -239.2, y: 168.7}
+        - {x: -239.2, y: -168.3}
+        - {x: 240.8, y: -168.3}
+        - {x: 240.8, y: 168.7}
+    - name: Countertop_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 279
+        width: 597
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -238.6, y: 64.7}
+        - {x: -238.6, y: -64.3}
+        - {x: 239.4, y: -64.3}
+        - {x: 239.4, y: 64.7}
     outline: []
   spritePackingTag: 
   userData: 
