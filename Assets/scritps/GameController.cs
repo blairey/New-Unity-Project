@@ -31,10 +31,8 @@ public class GameController : MonoBehaviour {
 
      public void reset()
      {
-         alan.gameObject.SetActive(true);
-
-         deathMenuScreen.gameObject.SetActive(true);
-       // StartCoroutine("reset");
+            alan.gameObject.SetActive(true);
+            deathMenuScreen.gameObject.SetActive(true);
      }
 
      public void resetGame()
@@ -45,7 +43,6 @@ public class GameController : MonoBehaviour {
          {
              platformListing[i].gameObject.SetActive(false);
          }
-
 
          alan.transform.position = alanBeginPoint;
          platformGene.position = gameBeginPoint;
