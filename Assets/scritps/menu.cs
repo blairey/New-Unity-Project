@@ -4,24 +4,27 @@ using System.Collections;
 public class menu : MonoBehaviour {
 
     public string playLevel;
+    public string infoPage;
+    public string menuPage;
 
     public void startGame()
     {
         Application.LoadLevel(playLevel);
     }
 
-    public void quit()
+    public void info()
     {
-        Application.Quit;
+        Application.LoadLevel(infoPage);
     }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public void menuNav()
+        {
+            Application.LoadLevel(menuPage);
+        }
+
+    public void quit()
+    {
+        Application.Quit();
+    }
+
 }

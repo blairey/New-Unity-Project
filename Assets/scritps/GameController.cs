@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour {
 
     private PlatfromDestroyer[] platformListing;
 
+    public deathMenu deathMenuScreen;
+
 	// Use this for initialization
 	void Start () {
 
@@ -29,25 +31,41 @@ public class GameController : MonoBehaviour {
 
      public void reset()
      {
-        StartCoroutine("reset");
+         alan.gameObject.SetActive(true);
+
+         deathMenuScreen.gameObject.SetActive(true);
+       // StartCoroutine("reset");
      }
 
-    public IEnumerator resetGame()
+     public void resetGame()
+     {
+         platformListing = FindObjectsOfType<PlatfromDestroyer>();
+         for (int i = 0; i < platformListing.Length; i++)
+         {
+             platformListing[i].gameObject.SetActive(false);
+         }
+
+
+         alan.transform.position = alanBeginPoint;
+         platformGene.position = gameBeginPoint;
+         alan.gameObject.SetActive(true);
+     }
+  /*  public IEnumerator resetGame()
     {
 
         alan.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
         platformListing = FindObjectsOfType<PlatfromDestroyer>();
-
         for(int i = 0; i < platformListing.Length ; i++)
         {
             platformListing[i].gameObject.SetActive(false);
         }
 
-        yield return new WaitForSeconds(0.5f);
+        
         alan.transform.position = alanBeginPoint;
         platformGene.position = gameBeginPoint;
         alan.gameObject.SetActive(true);
-    }
+    }*/
 	
 	
 }

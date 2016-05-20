@@ -50,6 +50,7 @@
      <Compile Include="Assets\scritps\GameController.cs" />
      <Compile Include="Assets\scritps\PlatfromDestroyer.cs" />
      <Compile Include="Assets\scritps\countertopGene.cs" />
+     <Compile Include="Assets\scritps\deathMenu.cs" />
      <Compile Include="Assets\scritps\menu.cs" />
      <Compile Include="Assets\scritps\objectPool.cs" />
      <Compile Include="Assets\scritps\singleton.cs" />
