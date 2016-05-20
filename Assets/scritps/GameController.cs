@@ -39,6 +39,7 @@ public class GameController : MonoBehaviour {
 
      public void resetGame()
      {
+         deathMenuScreen.gameObject.SetActive(false);
          platformListing = FindObjectsOfType<PlatfromDestroyer>();
          for (int i = 0; i < platformListing.Length; i++)
          {

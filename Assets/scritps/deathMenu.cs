@@ -7,7 +7,7 @@ public class deathMenu : MonoBehaviour {
 
     public void restart()
     {
-
+        FindObjectOfType<GameController>().resetGame();
     }
 
     public void quitToMenu()
